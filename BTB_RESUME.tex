@@ -1,0 +1,168 @@
+%------------------------- 
+% Resume in LaTeX 
+% Based on: Jake's Resume (https://www.overleaf.com/latex/templates/jakes-resume)
+% License: MIT 
+%------------------------ 
+\documentclass[letterpaper,11pt]{article} 
+\usepackage{latexsym} 
+\usepackage[empty]{fullpage} 
+\usepackage{titlesec} 
+\usepackage{marvosym} 
+\usepackage[usenames,dvipsnames]{color} 
+\usepackage{verbatim} 
+\usepackage{enumitem} 
+\usepackage[hidelinks]{hyperref} 
+\usepackage{fancyhdr} 
+\usepackage[english]{babel} 
+\usepackage{tabularx} 
+
+%----------FONT OPTIONS---------- 
+\pagestyle{fancy} 
+\fancyhf{} 
+\fancyfoot{} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt} 
+
+\addtolength{\oddsidemargin}{-0.5in} 
+\addtolength{\evensidemargin}{-0.5in} 
+\addtolength{\textwidth}{1in} 
+\addtolength{\topmargin}{-.5in} 
+\addtolength{\textheight}{1.0in} 
+\urlstyle{same} 
+\raggedbottom 
+\raggedright 
+\setlength{\tabcolsep}{0in} 
+
+\titleformat{\section}{ 
+  \vspace{-4pt}\scshape\raggedright\large 
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}] 
+
+% Custom commands 
+\newcommand{\resumeItem}[1]{ 
+  \item\small{\parbox[t]{0.8\textwidth}{#1} \vspace{-2pt}} 
+  } 
+
+\newcommand{\resumeItemLongLines}[1]{ 
+  \item\small{\parbox[t]{0.8\textwidth}{#1} \vspace{2pt}} 
+  } 
+
+
+\newcommand{\resumeSubheading}[4]{ 
+  \vspace{-2pt}\item 
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r} 
+    \textbf{#1} & #2 \\ 
+    \textit{\small#3} & \textit{\small #4} \\ 
+  \end{tabular*}\vspace{-7pt} 
+} 
+
+\newcommand{\resumeSubSubheading}[2]{ 
+  \item 
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r} 
+    \textit{\small#1} & \textit{\small #2} \\ 
+  \end{tabular*}\vspace{-7pt} 
+} 
+
+\newcommand{\resumeProjectHeading}[2]{ 
+  \item 
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r} 
+    \small#1 & #2 \\ 
+  \end{tabular*}\vspace{-7pt} 
+} 
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+
+\begin{document} 
+
+\begin{center} 
+    \textbf{\Huge \scshape Brian Barbosky} \\ \vspace{1pt} 
+    \small (614) 499-0035 $|$ \href{mailto:barboskybrian@gmail.com}{barboskybrian@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/brian-barbosky}{linkedin.com/in/brian-barbosky} $|$ 
+    \href{https://github.com/bbarbosky}{github.com/bbarbosky} 
+\end{center} 
+
+\section{Education} 
+  \resumeSubHeadingListStart 
+    \resumeSubheading 
+      {The Ohio State University}{Columbus, OH} 
+      {Bachelor of Science in Computer Science; GPA: 3.7}{Aug 2024 -- Present} 
+      \resumeItemListStart 
+        \resumeItem{Relevant Coursework: Software Components (Java), Linear Algebra, Engineering Statistics} 
+      \resumeItemListEnd 
+    \resumeSubheading 
+      {Columbus State Community College}{Columbus, OH} 
+      {College Credit Plus Program; GPA: 4.0}{2023 -- 2024} 
+      \resumeItemListStart 
+        \resumeItem{Calculus II \& III Courses} 
+      \resumeItemListEnd 
+    \resumeSubheading 
+      {High School}{Upper Arlington} 
+      {GPA: 4.0 / ACT: 34}{2020 -- 2024} 
+      \resumeItemListStart 
+        \resumeItem{Advanced Placement Calculus, English, \& History} 
+      \resumeItemListEnd 
+
+  \resumeSubHeadingListEnd 
+
+\section{Skills} 
+  \resumeItemListStart 
+    \resumeItem{\textbf{Languages}: C\#, Java,  Python(Beginner)} 
+    \resumeItem{\textbf{Tools}: Visual Studio, Eclipse, Git, Unity, Blender} 
+  \resumeItemListEnd 
+
+\section{Projects} 
+  \resumeSubHeadingListStart 
+    \resumeProjectHeading 
+      {\textbf{3D Open World Fantasy RPG Video Game} $|$ \emph{C\#, Unity}}{2024-Present} 
+      \resumeItemListStart 
+        \resumeItemLongLines{Designed hundreds of AI character variations, thousands of interactive objects, hundreds of modular terrain node presets} 
+        \resumeItem{Implemented progressive RPG mechanics, complex magic system with diverse effects, memory efficient disk streaming system for player-placed objects} 
+      \resumeItemListEnd 
+    \resumeProjectHeading 
+      {\textbf{Full analysis of congressional redistricting with 1000+ speculative maps} \emph{}}{2020-Present} 
+      \resumeItemListStart 
+        \resumeItemLongLines{Positioned district lines for various population metrics across all fifty states} 
+        \resumeItem{Analyzed district data for demographic, turnout, and partisian metrics across different elections} 
+      \resumeItemListEnd 
+    \resumeProjectHeading 
+      {\textbf{3D Open World Survival Video Game with map of United States} $|$ \emph{C\#, Unity}}{2021-2023} 
+      \resumeItemListStart 
+        \resumeItemLongLines{Designed wildlife system with hundreds of animals, transportation system for land and water, 100s of terrain nodules simulating entire continental US} 
+        \resumeItem{Implemented interactive features for survival mechanics, resource gathering system, equipment system with animations} 
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd 
+
+\section{Experience} 
+  \resumeSubHeadingListStart 
+    \resumeSubheading 
+      {Model United Nations}{Georgetown University} 
+      {North American Invitational}{2024} 
+      \resumeItemListStart 
+        \resumeItem{Selected to sponsor resolution at internationally recognized conference} 
+      \resumeItemListEnd 
+    \resumeSubheading 
+      {Technical Support}{Local Real Estate Company} 
+      {Part-Time}{2023} 
+      \resumeItemListStart 
+        \resumeItem{Configured rental property pages on Zillow and Apartments.com. } 
+        \resumeItem{Performed various techncial support activities} 
+      \resumeItemListEnd 
+    \resumeSubheading 
+      {Product Instructional Video}{Payments Company} 
+      {Video \& Audio Editing}{2020} 
+      \resumeItemListStart 
+        \resumeItem{Created video instructing client use of ecommerce tool} 
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd 
+
+\section{Interests} 
+  \resumeItemListStart 
+    \resumeItem{Geographical analysis of political trends} 
+    \resumeItem{Interactive systems design and 3D modelling related to game development} 
+    \resumeItem{Plugin editing and cleaning for game modification} 
+    \resumeItem{Data Analysis} 
+  \resumeItemListEnd 
+
+\end{document}

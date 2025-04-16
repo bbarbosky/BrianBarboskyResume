@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\usepackage{enumitem}
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+%\profilepic{alice.jpeg} % Profile picture
+\profilepic{} % Profile picture
+
+\cvname{Brian Barbosky} % Your name
+\cvjobtitle{Freshman at OSU} % Job title/career
+
+\cvdate{} % Date of birth
+%\cvaddress{2632 Kent Rd, Columbus Ohio 43221} % Short address/location, use \newline if more than 1 line is required
+\cvlinkedin{https://www.linkedin.com/in/brian-barbosky/} % Add linked in info 
+\cvnumberphone{614-499-0035} % Phone number
+\cvsite{https://github.com/bbarbosky} % Personal website
+\cvmail{barboskybrian@gmail.com} % Email address
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{An engineering/computer science student attending Ohio State University.} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Modding/2.5},{Blender/3.5},{Unity/4.5},{Java/5.5},{C\#/6.0}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{}
+
+%----------------------------------------------------------------------------------------
+
+% Redefine makeprofile to include Interests at the bottom
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+%\subsection{Objective}
+
+Seeking part-time or full-time summer postion in a technical or creative role. Open to all opportunities, especially interested in political analysis or game development.
+
+
+   
+
+\vspace{32pt} % Space after name and title
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{Since 2024}{Computer Science \& Engineering - GPA: 3.7}{Ohio State University}{Artificial Intelligence Track}
+	\twentyitem{2023-2024}{College Credit Plus - GPA: 4.0}{Columbus State Community College}{Calculus II \& III Courses}
+	\twentyitem{2020-2024}{High School - GPA: 4.0 / ACT: 34}{Upper Arlington}{Advanced Placement Calculus, English, \& History}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{2024-pres.}{3D Open World Fantasy RPG Video Game}
+	\twentyitemshort{2020-pres.}{Full analysis of congressional redistricting with 1000+ speculative maps}
+	\twentyitemshort{2021-2023}{3D Open World Survival Video Game with detailed map of United States}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+%	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2024}{Model United Nations Invitational }{Georgetown University}{Selected to sponsor resolution at internationally recognized conference}
+	\twentyitem{2023}{Technical Support}{Local Real Estate Company}{Configured rental property pages on Zillow and Apartments.com. Performed other general techncial support activities}
+	\twentyitem{2020}{Product Instructional Video}{Payments Company}{Created video instructing client use of ecommerce tool}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\begin{flushleft}
+	\begin{itemize}[leftmargin=*, itemsep=1pt]
+		\item Geographical analysis of political trends
+		\item Interactive systems design and 3D modelling related to game development
+		\item Plugin editing and cleaning for game modification
+	\end{itemize}
+\end{flushleft}
+ 
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
